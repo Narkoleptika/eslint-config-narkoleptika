@@ -216,7 +216,8 @@ module.exports = {
         'max-depth': 0,
         'max-len': [1, 120, 4, {
             ignoreComments: true,
-            ignoreUrls: true
+            ignoreUrls: true,
+            ignoreStrings: true
         }],
         'max-params': [1, 5],
         'max-statements': 0,
