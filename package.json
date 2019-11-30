@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-narkoleptika",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "Eslint configuration for Narkoleptika",
   "repository": {
     "type": "git",
@@ -9,6 +9,6 @@
   "author": "Joseph Marsh",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 3"
+    "eslint": ">= 4"
   }
 }

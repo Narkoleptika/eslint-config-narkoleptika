@@ -155,7 +155,14 @@ module.exports = {
             capIsNew: true
         }],
         'new-parens': 2,
-        'newline-after-var': [2, 'always'],
+        'padding-line-between-statements': [
+            'error',
+            { blankLine: "always", prev: "*", next: "return" },
+            { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+            { blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"] },
+            { blankLine: "always", prev: "directive", next: "*" },
+            { blankLine: "any", prev: "directive", next: "directive" }
+        ],
         'no-array-constructor': 2,
         'no-continue': 2,
         'no-inline-comments': 0,
