@@ -1,14 +1,20 @@
 {
-  "name": "eslint-config-narkoleptika",
-  "version": "3.0.0",
-  "description": "Eslint configuration for Narkoleptika",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Narkoleptika/eslint-config-narkoleptika"
-  },
-  "author": "Joseph Marsh",
-  "license": "MIT",
-  "peerDependencies": {
-    "eslint": ">= 4"
-  }
+    "name": "eslint-config-narkoleptika",
+    "version": "4.0.0",
+    "description": "Eslint configuration for Narkoleptika",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Narkoleptika/eslint-config-narkoleptika"
+    },
+    "author": "Joseph Marsh",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint --fix ."
+    },
+    "peerDependencies": {
+        "eslint": ">= 8.34.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.34.0"
+    }
 }
