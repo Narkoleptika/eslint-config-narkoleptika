@@ -1,7 +1,9 @@
 {
     "name": "eslint-config-narkoleptika",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "Eslint configuration for Narkoleptika",
+    "type": "module",
+    "main": "dist/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/Narkoleptika/eslint-config-narkoleptika"
@@ -9,12 +11,20 @@
     "author": "Joseph Marsh",
     "license": "MIT",
     "scripts": {
-        "lint": "eslint --fix ."
+        "build": "tsc --build --clean && tsc --build",
+        "lint": "eslint . --fix",
+        "format": "prettier --write ."
     },
     "peerDependencies": {
-        "eslint": ">= 8.34.0"
+        "eslint": ">= 9.18.0"
     },
     "devDependencies": {
-        "eslint": "^8.34.0"
+        "eslint": "^9.18.0",
+        "@types/node": "^22.10.7",
+        "eslint-config-prettier": "^10.0.1",
+        "jiti": "^2.4.2",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.21.0"
     }
 }
